@@ -1,0 +1,26 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+.list {
+  padding: 30px;
+  border-bottom: 1px solid burlywood;
+  margin: 2%;
+  list-style: none;
+  padding-left: 0%;
+  color: black;
+  font-size: 1.5rem;
+  text-decoration: underline #fff;
+}
+.title {
+  text-align: left;
+  padding-left: 10px;
+}
+.flexx {
+  display: flex;
+}
+.header {
+  padding: 2%;
+  background-color: rgb(165, 42, 42);
+  color: white;
+}
