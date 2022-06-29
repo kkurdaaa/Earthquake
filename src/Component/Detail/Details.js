@@ -24,7 +24,7 @@ function Details() {
       latitude: data.properties.products.origin[0].properties.latitude,
     });
   };
-
+  
   useEffect(earthquake, [eventid]);
 
   return (

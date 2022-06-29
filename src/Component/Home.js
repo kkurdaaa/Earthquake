@@ -7,7 +7,7 @@ function Home() {
   const [quakes, setQuakes] = useState([]);
   const earthquake = async () => {
     const res = await fetch(
-      `https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2022-01-02&limit=10`
+      `https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2022-01-01&limit=20`
     );
     const data = await res.json();
     const date = new Date(data.features.time);
@@ -22,7 +22,7 @@ function Home() {
         <header className="header">
           <div className="flexx">
             {" "}
-            <img src="https://play-lh.googleusercontent.com/KA6QggoPyOOcY2PeR447S0vqK8GvieUIBAXOCcgXhsGuNRwZ6WyihqoAJmlv7YubCmM"
+            <img src="https://logodix.com/logo/1717199.png"
               style={{ color: "white", width: "5%" }}/>
             <h1 className="title">Home Page : Earthquakes </h1>
           </div>{" "}
@@ -44,9 +44,8 @@ function Home() {
                 {" "}
                 <li className="list">
                   {element.properties.place}
-                  {element.properties.time}
-                </li>
-              </Link>
+                </li>                  
+              </Link>                  // {element.properties.time} put this to display time
             );
           })}
         </ul>
